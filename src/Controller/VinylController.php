@@ -31,11 +31,9 @@ class VinylController extends AbstractController
     #[Route('/browse/{gene}')]
     public function browseGen(string $gene = null): Response
     {
-        if ($gene) {
-            $geneTitle = 'You are browsing now: ' . u(str_replace('-', ' ', $gene))->title(true);
-        } else {
-            $geneTitle = 'All Generes';
-        }
-        return new Response($geneTitle);
+        $geneTitle = $gene ? u(str_replace('-', ' ', $gene))->title(true) : null;
+        return $this->render('vinyl/browse.html.twig', [
+            'genre'=> $geneTitle
+        ]);
     }
 }
