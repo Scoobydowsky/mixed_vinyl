@@ -9,7 +9,7 @@ use function Symfony\Component\String\u;
 
 class VinylController extends AbstractController
 {
-    #[Route('/')]
+    #[Route('/', name: 'app_homepage')]
     public function homepage(): Response
     {
 
@@ -28,7 +28,7 @@ class VinylController extends AbstractController
         ]);
     }
 
-    #[Route('/browse/{gene}')]
+    #[Route('/browse/{gene}', name: 'app_browse')]
     public function browseGen(string $gene = null): Response
     {
         $geneTitle = $gene ? u(str_replace('-', ' ', $gene))->title(true) : null;
