@@ -11,4 +11,4 @@ import './styles/app.css';
 // start the Stimulus application
 import './bootstrap';
 
-console.log("Hi! My name is app.js!");
+console.log('Hi! My name is app.js!');
