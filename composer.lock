@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "827f2e54d81d18fd853ef847be8d522d",
+    "content-hash": "40ca4a480543bee16d32748cf97db5c7",
     "packages": [
         {
             "name": "knplabs/knp-time-bundle",
@@ -458,16 +458,16 @@
         },
         {
             "name": "symfony/cache",
-            "version": "v6.1.0-RC1",
+            "version": "v6.1.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/cache.git",
-                "reference": "4743afecf8ba617c5c47675bc744db169af47d0a"
+                "reference": "c6a7f2a1c65c30678b82c1171ff99edbeb915be0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/cache/zipball/4743afecf8ba617c5c47675bc744db169af47d0a",
-                "reference": "4743afecf8ba617c5c47675bc744db169af47d0a",
+                "url": "https://api.github.com/repos/symfony/cache/zipball/c6a7f2a1c65c30678b82c1171ff99edbeb915be0",
+                "reference": "c6a7f2a1c65c30678b82c1171ff99edbeb915be0",
                 "shasum": ""
             },
             "require": {
@@ -527,14 +527,14 @@
                     "homepage": "https://symfony.com/contributors"
                 }
             ],
-            "description": "Provides an extended PSR-6, PSR-16 (and tags) implementation",
+            "description": "Provides extended PSR-6, PSR-16 (and tags) implementations",
             "homepage": "https://symfony.com",
             "keywords": [
                 "caching",
                 "psr6"
             ],
             "support": {
-                "source": "https://github.com/symfony/cache/tree/v6.1.0-RC1"
+                "source": "https://github.com/symfony/cache/tree/v6.1.11"
             },
             "funding": [
                 {
@@ -550,7 +550,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-04-26T13:23:01+00:00"
+            "time": "2023-01-20T17:44:30+00:00"
         },
         {
             "name": "symfony/cache-contracts",
