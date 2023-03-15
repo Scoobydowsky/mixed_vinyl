@@ -14,7 +14,7 @@ use function Symfony\Component\String\u;
 class VinylController extends AbstractController
 {
     public function __construct(
-        private MixRepository $mixRepository,
+        private VinylMixRepository $mixRepository,
         private bool $isDebug,
 ){
 
@@ -42,7 +42,7 @@ class VinylController extends AbstractController
     {
         $genre = $slug ? u(str_replace('-', ' ', $slug))->title(true) : null;
 
-        $mixes= $mixRepository->findAll();
+        $mixes= $mixRepository->findby([],['votes'=>'DESC']);
 
         return $this->render('vinyl/browse.html.twig', [
             'genre' => $genre,
